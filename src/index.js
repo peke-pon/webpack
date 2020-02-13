@@ -1,3 +1,5 @@
+import _ from 'lodash';
+
 const array = ["web","pack"];
 
 const elm = document.createElement('p')
