@@ -10,14 +10,18 @@ module.exports = {
     filename: "main.js",
     path: outputPath
   },
+  // モジュールの読み込み
   module: {
     rules: [
       {
+        // 対象ファイル
         test: /\.css$/,
-        use: ['style-loader','css-loader']
+        // 後ろから読み込まれていく
+        use: ["style-loader", "css-loader"]
       }
     ]
   },
+  // index.htmlのフォルダを指定
   devServer: {
     contentBase: outputPath
   }
