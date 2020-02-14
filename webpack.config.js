@@ -1,13 +1,13 @@
-const path = require("path");
+const path = require('path');
 
 // 絶対パスに変換
-const outputPath = path.resolve(__dirname, "dist");
+const outputPath = path.resolve(__dirname, 'dist');
 
 module.exports = {
   // バンドル対象ファイルの設定
-  entry: "./src/index.js",
+  entry: './src/index.js',
   output: {
-    filename: "main.js",
+    filename: 'main.js',
     path: outputPath
   },
   // モジュールの読み込み
@@ -17,7 +17,7 @@ module.exports = {
         // 対象ファイル
         test: /\.css$/,
         // 後ろから読み込まれていく
-        use: ["style-loader", "css-loader"]
+        use: ['style-loader', 'css-loader']
       },
       {
         // 読み込む画像ファイルの指定
@@ -29,6 +29,12 @@ module.exports = {
           limit: 512,
           name: './images/[name].[ext]'
         }
+      },
+      {
+        // 対象ファイル
+        test: /\.scss$/,
+        // sassを初めに変換
+        use: ['style-loader', 'css-loader','sass-loader']
       }
     ]
   },
