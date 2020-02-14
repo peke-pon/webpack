@@ -18,6 +18,17 @@ module.exports = {
         test: /\.css$/,
         // 後ろから読み込まれていく
         use: ["style-loader", "css-loader"]
+      },
+      {
+        // 読み込む画像ファイルの指定
+        test: /\.(jpe?g|png|gif|svg|ico)$/i,
+        // base64で画像を埋め込む
+        loader: 'url-loader',
+        // 画像をパスで読み込み
+        options: {
+          limit: 512,
+          name: './images/[name].[ext]'
+        }
       }
     ]
   },
