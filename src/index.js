@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-const array = ["web","pack"];
+const array = ["❖ ", "web", "pack",];
 
 const elm = document.createElement('p')
 elm.innerHTML = _.join(array, '');
