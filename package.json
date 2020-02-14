@@ -8,9 +8,10 @@
     "start": "webpack-dev-server --open --mode development"
   },
   "dependencies": {
-    "live-server": "^1.2.1",
+    "css-loader": "^3.4.2",
     "lodash": "^4.17.15",
     "server": "^1.0.22",
+    "style-loader": "^1.1.3",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
