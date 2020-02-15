@@ -14,3 +14,5 @@ document.body.appendChild(elm);
 const image = new Image();
 image.src = img;
 document.body.appendChild(image);
+
+console.log('処理完了');
