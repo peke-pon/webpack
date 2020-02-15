@@ -1,6 +1,7 @@
 // module
 import _ from 'lodash';
 // scss
+import "./style.css";
 import "./style.scss";
 // image
 import img from "./webpack.svg";
