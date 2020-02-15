@@ -68,6 +68,7 @@ module.exports = (env, argv) => {
         : [
             new TerserPlugin({
               terserOptions: {
+                extractComments: "all",
                 compress: { drop_console: true }
               }
             })
