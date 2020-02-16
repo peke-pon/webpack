@@ -1,8 +1,8 @@
-// module
+// ライブラリのインポート
 import _ from 'lodash';
-// scss
+// scss読み込み
 import "./scss/style.scss";
-// image
+// 画像ファイルの読み込み
 import img from "./images/webpack.svg";
 import img2 from "./images/bg.svg";
 
@@ -19,4 +19,5 @@ const elm = document.createElement('p')
 elm.innerHTML = _.join(array, '');
 document.body.appendChild(elm);
 
+// production時には削除される
 console.log('処理完了');
