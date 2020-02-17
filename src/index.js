@@ -1,8 +1,7 @@
-// ライブラリのインポート
 import { join } from 'lodash-es';
-// scss読み込み
+
 import "./scss/style.scss";
-// 画像ファイルの読み込み
+
 import img from "./images/webpack.svg";
 import img2 from "./images/bg.svg";
 
@@ -15,9 +14,6 @@ image2.src = img2;
 document.body.appendChild(image2);
 
 const array = ["web", "pack",];
-const elm = document.createElement('p')
+const elm = document.createElement('p');
 elm.innerHTML = join(array, '');
 document.body.appendChild(elm);
-
-// production時には削除される
-console.log('処理完了');

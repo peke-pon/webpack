@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
 $color-bg: rgb(58, 114, 189);
 $color-bg2: rgb(23, 50, 109);
 
@@ -15,82 +17,43 @@ body {
 
 p {
   color: #fff;
-  font-size: 6vw;
+  font-size: 160px;
   font-weight: bold;
   font-family: "Oswald", sans-serif;
   letter-spacing: 3px;
   margin: 0;
   position: relative;
+  top: -4vh;
   z-index: 3;
 }
 
 img:nth-of-type(1) {
-  width: 9vw;
+  width: 180px;
   opacity: 0.9;
   position: relative;
+  top: -2vh;
   z-index: 3;
   animation: rotateY 2s 1.5s ease-in-out;
 }
 
 img:nth-of-type(2) {
+  height: 140vh;
   opacity: 0.06;
   position: absolute;
   z-index: 2;
-  transform: rotate3d(0, 10, 30, -20deg);
+  transform: rotate3d(0, 10, 30, -10deg);
 }
 
-.sub {
-	color: #fff;
-	font-size: 60px;
-	display: block;
-	position: absolute;
-	bottom: 22px;
-	right: 20px;
-}
-
-.sub:before {
-	display: block;
-	content: '';
-	width: 65px;
-	height: 6px;
-	background: #fff;
-	position: absolute;
-	bottom: -2px;
-	right:2px;
-}
-
-.sub:after {
-	display: block;
-	content: '';
-	width: 500px;
-	height: 500px;
-	background: rgba(24, 144, 104, 0.808);
-	position: absolute;
-	bottom: -350px;
-	right: -350px;
-	transform: rotate(50deg);
-	z-index: -1;
-
-}
-
-.logo {
-	position: absolute;
-	top: 30px;
-	left: 30px;
-	z-index: 1000;
-}
-
-
-@media all and (max-width: 980px) {
+@media all and (max-width: 1024px) {
   p {
-     font-size: 12vw;
+     font-size: 18vw;
   }
 
   img:nth-of-type(1) {
-    width: 18vw;
+    width: 20vw;
   }
   img:nth-of-type(2) {
-    height: auto;
+    height: 140vh;
   }
 }
 
