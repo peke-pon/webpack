@@ -1,4 +1,4 @@
-// 絶対パスを取得するために使用
+// 各OSに対応した絶対パスを取得するために使用
 const path = require("path");
 // ファイル名にハッシュを付与
 const HtmlWebpackPlugin = require("html-webpack-plugin");
