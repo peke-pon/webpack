@@ -17,8 +17,7 @@
         "sourceType": "module"
     },
     "plugins": [
-        "vue",
-        "@typescript-eslint"
+        "vue"
     ],
     "rules": {
     }
